@@ -33,10 +33,6 @@ startButton.addEventListener('click', () => {
   toggleClock()
 })
 
-pauseButton.addEventListener('click', () => {
- toggleClock()
-})
-
 resetButton.addEventListener('click', () => {
  toggleClock(true)
 })

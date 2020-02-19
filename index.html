@@ -7,46 +7,62 @@
   </head>
   <body>
     <main>
-      <div id="clock">
-        <span>25:00</span>
-      </div>
-      <div>
-        <input type="text" id="pomodoro-clock-task" placeholder="Digite sua tarefa..." />
-      </div>
-      <div class="actions">
-        <button class="btn" id="start">
-          <i class="fas fa-play"></i>
-        </button>
-        <button class="btn" id="pause">
-          <i class="fas fa-pause"></i>
-        </button>
-        <button class="btn" id="reset">
-          <i class="fas fa-redo-alt"></i>
-        </button>
-      </div>
-      <div id="pomodoro-clock-title">
-        <span>
-          Mudanças feitas aqui afetarão no começo do seu próximo trabalho ou pausa.
-        </span>
-      </div>
-      <div id="pomodoro-clock-actions">
-        <div class="pomodoro-input">
-          <label>Duração do trabalho</label>
-          <input name="input-work-duration" id="input-work-duration" class="input-number" type="number" />
+      <div class="left-side card">
+        <h3>Configure seu pomodoro</h3>
+        <div>
+          <input
+            type="text"
+            id="pomodoro-clock-task"
+            placeholder="Digite sua tarefa..."
+          />
         </div>
-        <div class="pomodoro-input">
-          <label>Duração da pausa</label>
-          <input name="input-break-duration" id="input-break-duration" class="input-number" type="number" />
+        <div id="pomodoro-clock-actions">
+          <div class="pomodoro-input">
+            <label>Duração do trabalho</label>
+            <input
+              name="input-work-duration"
+              id="input-work-duration"
+              class="input-number"
+              type="number"
+            />
+          </div>
+          <div class="pomodoro-input">
+            <label>Duração da pausa</label>
+            <input
+              name="input-break-duration"
+              id="input-break-duration"
+              class="input-number"
+              type="number"
+            />
+          </div>
         </div>
       </div>
-      <div id="pomodoro-infos">
+
+
+      <div class="center">
+        <div id="clock">
+          <span>25:00</span>
+        </div>
+        <div class="actions">
+          <button class="btn" id="start">
+            <i class="fas fa-play" id="button-play-pause-i"></i>
+          </button>
+          <button class="btn" id="reset">
+            <i class="fas fa-redo-alt" id="button-reset-i"></i>
+          </button>
+        </div>
+      </div>
+      <div id="pomodoro-infos" class="right-side card">
         <h3>Suas Sessões</h3>
-        <ul id="pomodoro-sessions">
-        </ul>
+        <ul id="pomodoro-sessions"></ul>
       </div>
     </main>
 
-    <script src="js/clock.js"></script>
-    <script src="https://kit.fontawesome.com/2f1642c9ea.js" crossorigin="anonymous"></script>
+    <script src="src/js/clock.js"></script>
+    <script src="src/js/changeButton.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2f1642c9ea.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
