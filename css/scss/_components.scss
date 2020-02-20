@@ -37,6 +37,11 @@ button.btn{
   &:hover {
     opacity: 1;
   }
+
+  i{
+    width: 100%;
+    padding: 15px;
+  }
 }
 
 #clock {
